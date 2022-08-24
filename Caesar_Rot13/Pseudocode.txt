@@ -1,0 +1,27 @@
+Rot13_And_Caesar
+    SET letter = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O',
+                'P','Q','R','S','T','U','V','W','X','Y','Z']
+    GET input_text
+    SET text[]
+    FOR c to range input_text DO
+        GET text[c]  
+    GET check
+    FOR x to text DO
+        DISPLAY x
+        FOR i = 0 to 26 DO
+            IF x == letter[i] then
+                IF check == 'เข้ารหัสข้อมูล' Then
+                    COMPUTE caesar = (i + 3) % 26   
+                    DISPLAY letter[caesar]
+                    COMPUTE rot = (i + 13) % 26
+                    DISPLAY letter[rot]
+                ELSE IF check == 'ถอดรหัสข้อมูล' Then
+                    COMPUTE caesar = (i - 3) % 26
+                    DISPLAY letter[caesar]
+                    COMPUTE rot = (i - 13) % 26
+                    DISPLAY letter[rot]
+                ENDIF
+            ENDIF
+        ENDFOR
+    ENDFOR
+END

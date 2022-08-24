@@ -1,0 +1,33 @@
+BASE_2_8_To_10
+	WHILE True DO
+		GET button 
+		IF button = 'B' or button = 'b' THEN
+			GET Base2
+			SET Total_Base2 = 0
+			SET Len_Base2 = Base2
+			SET Multiply = 0
+			FOR x = 1 to Base2 DO
+				Len_Base2 = Len_Base2 - 1
+				Multiply = 2**Len_Base2
+				Total_Base2 = Total_Base2 + (int(Base2(x)) * Multiply)
+			ENDFOR
+			DISPLAY Total_Base2
+
+		ELSE IF button = 'O' or button = 'o' THEN
+			GET Base8
+			SET Total_Base8 = 0
+			SET Len_Base8 = Base8
+			SET Multiply = 0
+			FOR y = 1 to Base8 DO
+				Len_Base8 = Len_Base8 - 1
+				Multiply = 8**Len_Base8
+				Total_Base8 = Total_Base8 + (int(Base8(y)) * Multiply)
+			ENDFOR
+			DISPLAY Total_Base8
+		
+		ELSE
+			break
+		ENDIF
+		
+	ENDWHILE
+END
