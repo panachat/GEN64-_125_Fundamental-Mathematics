@@ -17,7 +17,7 @@ Rot13_And_Caesar
                     DISPLAY letter[rot]
                 ELSE IF check == 'ถอดรหัสข้อมูล' Then
                     COMPUTE caesar = (i - 3) % 26
-                    DISPLAY letter[caesar]
+                    DISPLAYz letter[caesar]
                     COMPUTE rot = (i - 13) % 26
                     DISPLAY letter[rot]
                 ENDIF
