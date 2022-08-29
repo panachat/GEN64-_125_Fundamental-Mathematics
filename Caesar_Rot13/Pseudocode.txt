@@ -1,16 +1,15 @@
 Rot13_And_Caesar
-    SET letter = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O',
+    SET Character = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O',
                 'P','Q','R','S','T','U','V','W','X','Y','Z']
-    GET input_text
+    GET lenght
     SET text[]
-    FOR c to range input_text DO
+    DO c = 0 to lenght - 1
         GET text[c]
-    ENDFOR 
-    GET check
-    FOR x to text DO
-        DISPLAY x
-        FOR i = 0 to 26z DO
-            IF x == letter[i] then
+    ENDDO
+
+    DO x = 0 to text - 1
+        DO i = 0 to Character - 1  
+            IF x == Character[i] then
                 IF check == 'เข้ารหัสข้อมูล' Then
                     COMPUTE caesar = (i + 3) % 26   
                     DISPLAY letter[caesar]
@@ -23,6 +22,6 @@ Rot13_And_Caesar
                     DISPLAY letter[rot]
                 ENDIF
             ENDIF
-        ENDFOR
-    ENDFOR
+        ENDDO
+    ENDDO
 END
