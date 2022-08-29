@@ -17,8 +17,8 @@ for x in text:
                 print("เข้ารหัส Rot",chars[rot])
             elif n == 'f':
                 ceasar = (i - 3)%26
-                print(chars[ceasar],end='')
+                print(chars[ceasar])
                 rot = (i - 13)%26
-                print(chars[rot],end='')
+                print(chars[rot])
 
         
