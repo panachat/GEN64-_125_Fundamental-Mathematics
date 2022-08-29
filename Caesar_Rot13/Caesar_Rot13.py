@@ -1,9 +1,9 @@
 chars = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q',
         'r','s','t','u','v','w','x','y','z']
-input_text = int(input("Enter your number : "))
+input_lenght = int(input("Enter your number : "))
 text = []
 
-for c in range(input_text):
+for c in range(input_lenght):
     text.append(input("Enter : your text : "))
 n = input("Enter : ")
 
