@@ -6,11 +6,11 @@ BASE_2_8_To_10
 			SET Total_Base2 = 0 // ตั้งค่า Total_Base2 เป็น 0
 			SET Len_Base2 = Base2 // ตั้งค่า Len_Base2 เป็น Base2
 			SET Multiply = 0
-			FOR x = 1 to Base2 DO // วนลูปตั้งต้นจาก 1 ไปจนถึง Base2
+			DO x = 1 to Base2  // วนลูปตั้งต้นจาก 1 ไปจนถึง Base2
 				Len_Base2 = Len_Base2 - 1 // ลดค่า Len_Base2 ลง 1
 				Multiply = 2**Len_Base2
 				Total_Base2 = Total_Base2 + (int(Base2(x)) * Multiply)
-			ENDFOR
+			ENDDO
 			DISPLAY Total_Base2
 
 		ELSE IF button = 'O' or button = 'o' THEN
@@ -18,11 +18,11 @@ BASE_2_8_To_10
 			SET Total_Base8 = 0
 			SET Len_Base8 = Base8
 			SET Multiply = 0
-			FOR y = 1 to Base8 DO
+			DO y = 1 to Base8 
 				Len_Base8 = Len_Base8 - 1
 				Multiply = 8**Len_Base8
 				Total_Base8 = Total_Base8 + (int(Base8(y)) * Multiply)
-			ENDFOR
+			ENDDO
 			DISPLAY Total_Base8
 		
 		ELSE
