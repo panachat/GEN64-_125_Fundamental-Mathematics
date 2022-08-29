@@ -6,7 +6,7 @@ Rot13_And_Caesar
     DO c = 0 to lenght - 1
         GET text[c]
     ENDDO
-
+    GET check
     DO x = 0 to text - 1
         DO i = 0 to Character - 1  
             IF x == Character[i] then
