@@ -1,6 +1,6 @@
 BASE_2_8_To_10
 	WHILE True DO
-		GET button // รับ่าทางคีย์บอร์ด
+		GET button 
 		IF button = 'B' or button = 'b' THEN 
 			GET Base2 
 			SET Total_Base2 = 0 
