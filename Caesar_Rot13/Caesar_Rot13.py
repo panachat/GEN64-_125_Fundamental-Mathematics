@@ -8,7 +8,6 @@ for c in range(input_text):
 n = input("Enter : ")
 
 for x in text:
-    print(x)
     for i in range (len(chars)):
         if x == chars[i]: #TODO ถ้าไม่ใส่ชื่อตัวแปรของ list ข้างหน้ามันจะเป็น เลข ถ้าใส่มันจะเป็นค่าใน list
             if n == 'g':
