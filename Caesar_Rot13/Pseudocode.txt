@@ -4,7 +4,8 @@ Rot13_And_Caesar
     GET input_text
     SET text[]
     FOR c to range input_text DO
-        GET text[c]  
+        GET text[c]
+    ENDFOR 
     GET check
     FOR x to text DO
         DISPLAY x
